@@ -1,5 +1,5 @@
 !!!! glucosa estrategia 1 (no tengo nunca en cuenta los que son 0)
-(20/jul) ????: qué spent media estaba usando aquí. glc + acetato, verdad? hay que quitarle la glucosa !!!
+(20/jul) glc + acetato
 
 Ratio E/P (entero en medio de psuedo): 1.0988071177
 Ratio E/P (pseudo en medio de entero): 1.05480110159
