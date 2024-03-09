@@ -1,0 +1,74 @@
+Medio: M9[glc]
+==============
+
+modelo: iJN1463.xml (pseudomonas putida...)
+==============
+solution Objective: 0.5329323247083814
+Status: Optimal
+
+
+modelo: iJO1366.xml (e coli K-12)
+==============
+solution Objective: 0.0
+Status: Optimal
+
+
+
+
+Medio: LB
+==============
+
+modelo: iJN1463.xml
+==============
+solution Objective: 1.3127189443963028
+Status: Optimal
+
+
+modelo: iJO1366.xml
+==============
+solution Objective: 2.4012787377494513
+Status: Optimal
+
+
+
+# smetana -d i*.xml --no-coupling --molweight --mediadb ../my_media.tsv -m M9[glc]
+community	medium	receiver	donor	compound	scs	mus	mps	smetana
+all	M9[glc]	iJN1463	iJO1366	M_15dap_e	n/a	0.03	1	0.03
+all	M9[glc]	iJN1463	iJO1366	M_acald_e	n/a	0.01	1	0.01
+all	M9[glc]	iJN1463	iJO1366	M_cgly_e	n/a	0.04	1	0.04
+all	M9[glc]	iJN1463	iJO1366	M_co2_e	n/a	0.03	1	0.03
+all	M9[glc]	iJN1463	iJO1366	M_cys__L_e	n/a	0.5	1	0.5
+all	M9[glc]	iJN1463	iJO1366	M_etha_e	n/a	0.07	1	0.07
+all	M9[glc]	iJN1463	iJO1366	M_etoh_e	n/a	0.27	1	0.27
+all	M9[glc]	iJN1463	iJO1366	M_for_e	n/a	0.02	1	0.02
+all	M9[glc]	iJN1463	iJO1366	M_gly_e	n/a	0.04	1	0.04
+all	M9[glc]	iJN1463	iJO1366	M_indole_e	n/a	0.01	1	0.01
+all	M9[glc]	iJN1463	iJO1366	M_lac__D_e	n/a	0.02	1	0.02
+all	M9[glc]	iJN1463	iJO1366	M_urea_e	n/a	0.04	1	0.04
+all	M9[glc]	iJO1366	iJN1463	M_ac_e	n/a	0.11	1	0.11
+all	M9[glc]	iJO1366	iJN1463	M_acac_e	n/a	0.06	1	0.06
+all	M9[glc]	iJO1366	iJN1463	M_acald_e	n/a	0.23	1	0.23
+all	M9[glc]	iJO1366	iJN1463	M_ade_e	n/a	0.03	1	0.03
+all	M9[glc]	iJO1366	iJN1463	M_ala__D_e	n/a	0.1	1	0.1
+all	M9[glc]	iJO1366	iJN1463	M_cgly_e	n/a	0.02	1	0.02
+all	M9[glc]	iJO1366	iJN1463	M_co2_e	n/a	0.03	1	0.03
+all	M9[glc]	iJO1366	iJN1463	M_cys__L_e	n/a	0.05	1	0.05
+all	M9[glc]	iJO1366	iJN1463	M_etoh_e	n/a	0.26	1	0.26
+all	M9[glc]	iJO1366	iJN1463	M_fald_e	n/a	0.05	1	0.05
+all	M9[glc]	iJO1366	iJN1463	M_glyald_e	n/a	0.13	1	0.13
+all	M9[glc]	iJO1366	iJN1463	M_glyc__R_e	n/a	0.09	1	0.09
+all	M9[glc]	iJO1366	iJN1463	M_glyc_e	n/a	0.08	1	0.08
+all	M9[glc]	iJO1366	iJN1463	M_glyclt_e	n/a	0.03	1	0.03
+all	M9[glc]	iJO1366	iJN1463	M_lac__D_e	n/a	0.02	1	0.02
+all	M9[glc]	iJO1366	iJN1463	M_pyr_e	n/a	0.05	1	0.05
+all	M9[glc]	iJO1366	iJN1463	M_ser__L_e	n/a	0.13	1	0.13
+all	M9[glc]	iJO1366	iJN1463	M_thr__L_e	n/a	0.03	1	0.03
+all	M9[glc]	iJO1366	iJN1463	M_val__L_e	n/a	0.01	1	0.01
+
+
+
+
+# smetana -g i*.xml --no-coupling --molweight --mediadb ../my_media.tsv -m M9[glc]
+community	medium	size	mip	mro
+all	M9[glc]	2	n/a	0.8 <<< makes sense, mip es n/a porque E coli no crece pero la otra sí
+
